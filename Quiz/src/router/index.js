@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: '/periodicTable',
-    name: 'PeriodicTable',
+    name: 'periodicTable',
     component: PeriodicTable,
   }
 ];

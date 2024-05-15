@@ -1,17 +1,18 @@
 <script setup>
 import { ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
 
 let allGames = ref([
-    { name: "Tableau périodique", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg/600px-Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg.png" },
-    { name: "Les 500 mots les plus fréquents en allemand", image: "https://th.bing.com/th/id/OIP.LQhaHASPN5KBAKNr-Xq7iAHaGq?w=187&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
-    { name: "Les 500 mots les plus fréquents en anglais", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/165px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" },
-    { name: "Apprentissage de π", image: "https://th.bing.com/th/id/OIP.Og_LgDO08tSUggH3bTAieAHaHJ?w=174&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
-    { name: "Table de multiplication", image: "https://th.bing.com/th/id/OIP.h6cS9_lg97wo0ysfQjgFnwHaGS?rs=1&pid=ImgDetMain" },
-    { name: "Drapeau pays", image: "https://th.bing.com/th/id/OIP.TNKoAEiNVy6ZifHmoLrsYgHaHW?w=196&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
-    { name: "Capital pays", image: "https://th.bing.com/th/id/OIP.pr-Y_Bmh-Bw99NX9pkci3QHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
-    { name: "Système solaire", image: "https://th.bing.com/th/id/OIP.AX9eTZjaFvGeS1A2RKQsvAHaEK?w=316&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
-    { name: "Les espèces animales", image: "https://th.bing.com/th/id/OIP.LUe3W3gcS1ECLjlWmS-RAQHaFj?w=236&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
-    { name: "Les constellations", image: "https://th.bing.com/th/id/OIP.huo3Gpu7QwmhPjCSdhvNXgAAAA?w=265&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
+    { name: "Tableau périodique", source: "periodicTable", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg/600px-Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg.png" },
+    { name: "Les 500 mots les plus fréquents en allemand", source: "500allemand", image: "https://th.bing.com/th/id/OIP.LQhaHASPN5KBAKNr-Xq7iAHaGq?w=187&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
+    { name: "Les 500 mots les plus fréquents en anglais", source: "500anglais", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/165px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" },
+    { name: "Apprentissage de π", source: "pi", image: "https://th.bing.com/th/id/OIP.Og_LgDO08tSUggH3bTAieAHaHJ?w=174&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
+    { name: "Table de multiplication", source: "multiplication", image: "https://th.bing.com/th/id/OIP.h6cS9_lg97wo0ysfQjgFnwHaGS?rs=1&pid=ImgDetMain" },
+    { name: "Drapeau pays", source: "drapeau", image: "https://th.bing.com/th/id/OIP.TNKoAEiNVy6ZifHmoLrsYgHaHW?w=196&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
+    { name: "Capital pays", source: "capital", image: "https://th.bing.com/th/id/OIP.pr-Y_Bmh-Bw99NX9pkci3QHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
+    { name: "Système solaire", source: "systemeSolaire", image: "https://th.bing.com/th/id/OIP.AX9eTZjaFvGeS1A2RKQsvAHaEK?w=316&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
+    { name: "Les espèces animales", source: "especeAnimal", image: "https://th.bing.com/th/id/OIP.LUe3W3gcS1ECLjlWmS-RAQHaFj?w=236&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
+    { name: "Les constellations", source: "constellation", image: "https://th.bing.com/th/id/OIP.huo3Gpu7QwmhPjCSdhvNXgAAAA?w=265&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
 ]);
 
 let currentPage = ref(1);
@@ -44,6 +45,13 @@ const goToPage = (page) => {
 const totalPagesArray = computed(() => {
   return Array.from({ length: totalPages.value }, (v, k) => k + 1);
 });
+
+const router = useRouter()
+
+const goToGamePage = (source) => {
+    // Redirigez vers la page spécifique en fonction de la source du jeu
+    router.push({ name: source });
+};
 </script>
 
 <template>
@@ -53,8 +61,8 @@ const totalPagesArray = computed(() => {
         <div v-for="game in paginatedGames" :key="game.name">
             <h1>{{ game.name }}</h1>
             <img :src="game.image" alt="Image du jeu" />
+            <button @click="goToGamePage(game.source)">Jouer</button>
         </div>
-
         <!-- Contrôles de pagination -->
         <div class="pagination">
             <button @click="previousPage" :disabled="currentPage === 1">Précédent</button>
