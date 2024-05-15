@@ -3,7 +3,7 @@ import homeMenu from './views/homeMenu.vue'
 </script>
 
 <template>
-  <homeMenu/>
+  <router-view></router-view>
 </template>
 
 <style scoped>
