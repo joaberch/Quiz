@@ -1,71 +1,59 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/homeMenu.vue';
-import PeriodicTable from '../views/periodicTable/periodictable.vue';
-import anglais from '../views/anglais/anglais.vue';
-import allemand from '../views/allemand/allemand.vue';
-import capital from '../views/capital/capital.vue';
-import constellation from '../views/constellation/constellation.vue';
-import drapeau from '../views/drapeau/drapeau.vue';
-import especeAnimal from '../views/especeAnimal/especeAnimal.vue';
-import multiplication from '../views/multiplication/multiplication.vue';
-import pi from '../views/pi/pi.vue';
-import systemeSolaire from '../views/systemeSolaire/systemeSolaire.vue';
-
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: () => import('../views/homeMenu.vue')
   },
   {
     path: '/periodicTable',
     name: 'periodicTable',
-    component: PeriodicTable,
+    component: () => import('../views/periodicTable/periodictable.vue')
   },
   {
     path: '/anglais',
     name: 'anglais',
-    component: anglais,
+    component: () => import('../views/anglais/anglais.vue')
   },
   {
     path: '/allemand',
     name: 'allemand',
-    component: allemand,
+    component: () => import('../views/allemand/allemand.vue')
   },
   {
     path: '/capital',
     name: 'capital',
-    component: capital,
+    component: () => import('../views/capital/capital.vue')
   },
   {
     path: '/constellation',
     name: 'constellation',
-    component: constellation,
+    component: () => import('../views/constellation/constellation.vue')
   },
   {
     path: '/drapeau',
     name: 'drapeau',
-    component: drapeau,
+    component: () => import('../views/drapeau/drapeau.vue')
   },
   {
     path: '/especeAnimal',
     name: 'especeAnimal',
-    component: especeAnimal,
+    component: () => import('../views/especeAnimal/especeAnimal.vue')
   },
   {
     path: '/multiplication',
     name: 'multiplication',
-    component: multiplication,
+    component: () => import('../views/multiplication/multiplication.vue')
   },
   {
     path: '/pi',
     name: 'pi',
-    component: pi,
+    component: () => import('../views/pi/pi.vue')
   },
   {
     path: '/systemeSolaire',
     name: 'systemeSolaire',
-    component: systemeSolaire,
+    component: () => import('../views/systemeSolaire/systemeSolaire.vue')
   }
 ];
 
