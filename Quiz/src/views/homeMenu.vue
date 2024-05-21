@@ -4,8 +4,8 @@ import { useRouter } from 'vue-router';
 
 let allGames = ref([
     { name: "Tableau périodique", source: "periodicTable", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg/600px-Tableau_p%C3%A9riodique_des_%C3%A9l%C3%A9ments.svg.png" },
-    { name: "Les 500 mots les plus fréquents en allemand", source: "500allemand", image: "https://th.bing.com/th/id/OIP.LQhaHASPN5KBAKNr-Xq7iAHaGq?w=187&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
-    { name: "Les 500 mots les plus fréquents en anglais", source: "500anglais", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/165px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" },
+    { name: "Les 500 mots les plus fréquents en allemand", source: "allemand", image: "https://th.bing.com/th/id/OIP.LQhaHASPN5KBAKNr-Xq7iAHaGq?w=187&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
+    { name: "Les 500 mots les plus fréquents en anglais", source: "anglais", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/165px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" },
     { name: "Apprentissage de π", source: "pi", image: "https://th.bing.com/th/id/OIP.Og_LgDO08tSUggH3bTAieAHaHJ?w=174&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" },
     { name: "Table de multiplication", source: "multiplication", image: "https://th.bing.com/th/id/OIP.h6cS9_lg97wo0ysfQjgFnwHaGS?rs=1&pid=ImgDetMain" },
     { name: "Drapeau pays", source: "drapeau", image: "https://th.bing.com/th/id/OIP.TNKoAEiNVy6ZifHmoLrsYgHaHW?w=196&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7" },

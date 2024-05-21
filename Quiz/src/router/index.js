@@ -1,8 +1,15 @@
-// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/homeMenu.vue';
 import PeriodicTable from '../views/periodicTable/periodictable.vue';
-import SystemeSolaire from '../views/systemeSolaire/systemeSolaire.vue';
+import anglais from '../views/anglais/anglais.vue';
+import allemand from '../views/allemand/allemand.vue';
+import capital from '../views/capital/capital.vue';
+import constellation from '../views/constellation/constellation.vue';
+import drapeau from '../views/drapeau/drapeau.vue';
+import especeAnimal from '../views/especeAnimal/especeAnimal.vue';
+import multiplication from '../views/multiplication/multiplication.vue';
+import pi from '../views/pi/pi.vue';
+import systemeSolaire from '../views/systemeSolaire/systemeSolaire.vue';
 
 const routes = [
   {
@@ -16,14 +23,14 @@ const routes = [
     component: PeriodicTable,
   },
   {
-    path: '/allemand',
-    name: 'allemand',
-    component: allemand,
-  },
-  {
     path: '/anglais',
     name: 'anglais',
     component: anglais,
+  },
+  {
+    path: '/allemand',
+    name: 'allemand',
+    component: allemand,
   },
   {
     path: '/capital',
