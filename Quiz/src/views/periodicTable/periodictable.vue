@@ -13,6 +13,7 @@ import data from '../../utils/periodicTableData';
     display: grid;
     grid-template: repeat(10, 1fr) / repeat(18, 1fr);
 }
+
 h1 {
     display: flex;
     justify-content: center;
