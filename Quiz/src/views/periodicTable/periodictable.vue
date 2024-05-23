@@ -17,5 +17,6 @@ import data from '../../utils/periodicTableData';
 h1 {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 </style>

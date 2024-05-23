@@ -7,12 +7,14 @@ const props = defineProps({
 const gridStyle = computed(() => {
   return {
     gridColumn: `${props.elementData.xpos} / ${props.elementData.xpos + 1}`,
-    gridRow: `${props.elementData.ypos} / ${props.elementData.ypos + 1}`
+    gridRow: `${props.elementData.ypos} / ${props.elementData.ypos + 1}`,
+    backgroundColor: `#${props.elementData.cpk_hex}`
   };
 });
 </script>
 <template>
-    <div :class="elementData.category" :id="elementData.number" :style="gridStyle">
+    <div :id="elementData.number" :style="gridStyle" @click="detail"> <!--:class="elementData.category"-->
+        <p></p>
         <p id="number">{{ elementData.number }}</p>
         <p id="symbol">{{ elementData.symbol }}</p>
         <p id="name">{{ elementData.name }}</p>
@@ -27,6 +29,7 @@ div {
     margin: 3px;
     border: black 1px solid;
     border-radius: 10px;
+    cursor:context-menu;
 }
 p{
     margin: 0
