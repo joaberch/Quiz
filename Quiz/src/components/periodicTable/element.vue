@@ -1,6 +1,5 @@
 <script setup>
 import { computed } from 'vue';
-import { defineProps } from 'vue';
 import elementDetail from './elementDetail.vue';
 import { ref } from 'vue';
 

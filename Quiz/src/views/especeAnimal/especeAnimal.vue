@@ -4,6 +4,6 @@
 <template>
 
 </template>
-<script setup>
+<style scoped>
 
-</script>
+</style>

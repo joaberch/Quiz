@@ -1,6 +1,5 @@
 <script setup>
 //TODO - responsive design
-import { defineProps } from 'vue';
 defineProps({
     elementData: Object,
 })
