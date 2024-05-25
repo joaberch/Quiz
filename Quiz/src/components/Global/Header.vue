@@ -59,7 +59,6 @@ onBeforeUnmount(() => {
 
 function clicked(event) {
     if (!event.target.closest('.search')) {
-        console.log("clicked outside")
         isSearching.value = false
     } else {
         isSearching.value = true
