@@ -1,8 +1,9 @@
 <script setup>
-import homeMenu from './views/homeMenu.vue'
+import Header from './components/Global/Header.vue';
 </script>
 
 <template>
+  <Header></Header>
   <router-view></router-view>
 </template>
 
