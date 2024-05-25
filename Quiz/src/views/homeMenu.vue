@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
+//importing the list of every game
 import allGames from '../utils/allGames';
 
 let currentPage = ref(1);

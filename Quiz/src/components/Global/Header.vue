@@ -3,14 +3,16 @@ import { useRouter } from 'vue-router';
 import allGames from '../../utils/allGames';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-const router = useRouter()
+//initialize the router
+const router = useRouter();
+//reactive reference, equals the user input in the searchbar
+let selectedGame = ref("");
+//reactive reference, if the predicitive search is currently shown
+let isSearching = ref(false);
 
 const goToHomePage = () => {
     router.push({ name: 'Home' });
 }
-
-let selectedGame = ref("");
-let isSearching = ref(false)
 
 const navigateTo = () => {
     isSearching.value = false;
@@ -28,17 +30,6 @@ const navigateTo = () => {
     }
 }
 
-const suggestionChanged = () => {
-    isSearching.value = true
-    allGames.value.forEach(element => {
-        if (element.name.toLowerCase().includes(selectedGame.value.toLowerCase())) {
-            element.isSuggested = true
-        } else {
-            element.isSuggested = false
-        }
-    });
-}
-
 const navClicked = (game) => {
     isSearching.value = false
     selectedGame.value = ""
@@ -49,38 +40,63 @@ const navClicked = (game) => {
     }
 }
 
+//When the user put any input in the searchbar
+const suggestionChanged = () => {
+    //the predictive search is on
+    isSearching.value = true
+    //for each game check if the element match the request to be displayed
+    allGames.value.forEach(element => {
+        if (element.name.toLowerCase().includes(selectedGame.value.toLowerCase())) {
+            element.isSuggested = true
+        } else {
+            element.isSuggested = false
+        }
+    });
+}
+
+//When the componant is mounted
+//Add an event listener
 onMounted(() => {
     document.addEventListener("click", clicked)
 })
 
+//Just before the componant is unmounted
 onBeforeUnmount(() => {
     document.removeEventListener("click", clicked)
 })
 
+//When the user click on the page
 function clicked(event) {
-    if (!event.target.closest('.search')) {
-        isSearching.value = false
-    } else {
+    //if the user click on the searchbar
+    if (event.target.closest('.search')) {
         isSearching.value = true
+    } else {
+        isSearching.value = false
     }
 }
 
+//Define the class of the predictive search
 function defineClass(allGames) {
+    //if at least one game should be shown in the predictive searcg put the style when shown
     allGames.forEach((element) => {
         if (element.isSuggested) {
             return 'suggestionOn'
         }
     })
+    //else
     return 'suggestionOff'
-    //selectedGame.length > 0 && isSearching ? 'suggestionOn' : 'suggestionOff'
 }
 </script>
 <template>
     <nav>
+        <!--Home menu-->
+        <img id="hamburger" src="https://icon-library.com/images/hamburger-menu-icon-svg/hamburger-menu-icon-svg-8.jpg" height="40px">
         <a @click="goToHomePage">Menu d'accueil</a>
+        <!--Search bar-->
         <div class="search">
             <input id="searchBar" type="text" placeholder="Recherche" autocomplete="off" v-model="selectedGame"
                 @keydown.enter="navigateTo" @input="suggestionChanged">
+            <!--Predictive research-->
             <div :class="defineClass(allGames)">
                 <span v-for="game in allGames" v-show="game.isSuggested && isSearching && selectedGame.length > 0">
                     <button v-if="game.isSuggested && isSearching" @click="navClicked(game.source)">{{ game.name
@@ -88,6 +104,7 @@ function defineClass(allGames) {
                 </span>
             </div>
         </div>
+        <!--login-->
         <div class="login">
             <img src="https://cdn-icons-png.flaticon.com/128/2609/2609282.png" width="50px" height="50px">
             <button>Se connecter</button>
@@ -95,30 +112,31 @@ function defineClass(allGames) {
     </nav>
 </template>
 <style scoped>
+/* Style for the login button */
 .login>button {
     margin-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100px;
 }
-
+/* Style for the login container */
 .login {
     display: flex;
     align-items: center;
-    margin-left: 30%;
+    margin-left: 15%;
 }
-
+/* Style for the container of each predictive search option */
 span {
     border-bottom: 1px solid black;
 }
-
+/* Style for every button */
 button {
     background-color: #00000000;
     border: none;
     margin-bottom: 0px;
     margin-top: 10px;
 }
-
+/* Style for the predective search when there's not any option displayed */
 .suggestionOff {
     position: absolute;
     margin-top: 44px;
@@ -130,7 +148,7 @@ button {
     display: flex;
     flex-direction: column;
 }
-
+/* Style for the predictive search when there's option displayed */
 .suggestionOn {
     position: absolute;
     margin-top: 44px;
@@ -143,19 +161,19 @@ button {
     flex-direction: column;
     padding-bottom: 15px;
 }
-
+/* Style for the search bar container */
 .search {
     display: flex;
     flex-direction: column;
 }
-
+/* Style for the whole header container */
 nav {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
     border-bottom: solid 1px black;
 }
-
+/* Style for the search bar */
 input {
     padding: 5px 5px 5px 10px;
     border: 5px solid #40e0d0;
@@ -165,8 +183,15 @@ input {
     margin-left: 30px;
     outline-width: 0px;
 }
-
+/* Style for the link */
 a {
+    border: #40e0d0 solid 3px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: context-menu;
+}
+/* Style of the hamburger menu */
+#hamburger {
     margin-left: 3%;
 }
 </style>
