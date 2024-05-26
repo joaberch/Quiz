@@ -172,6 +172,10 @@ nav {
     align-items: center;
     padding-bottom: 10px;
     border-bottom: solid 1px black;
+    background-color: white;
+    position:sticky;
+    top: 0;
+    width: 100%;
 }
 /* Style for the search bar */
 input {
