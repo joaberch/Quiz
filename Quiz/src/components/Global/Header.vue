@@ -128,6 +128,7 @@ function defineClass(allGames) {
 /* Style for the container of each predictive search option */
 span {
     border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
 /* Style for every button */
 button {
