@@ -10,8 +10,9 @@ let selectedGame = ref("");
 //reactive reference, if the predicitive search is currently shown
 let isSearching = ref(false);
 
-const goToHomePage = () => {
-    router.push({ name: 'Home' });
+const goTo = (route) => {
+    console.log(route)
+    router.push({ name: route });
 }
 
 const navigateTo = () => {
@@ -91,7 +92,7 @@ function defineClass(allGames) {
     <nav>
         <!--Home menu-->
         <img id="hamburger" src="https://icon-library.com/images/hamburger-menu-icon-svg/hamburger-menu-icon-svg-8.jpg" height="40px">
-        <a @click="goToHomePage">Menu d'accueil</a>
+        <a @click="goTo('Home')">Menu d'accueil</a>
         <!--Search bar-->
         <div class="search">
             <input id="searchBar" type="text" placeholder="Recherche" autocomplete="off" v-model="selectedGame"
@@ -104,6 +105,10 @@ function defineClass(allGames) {
                 </span>
             </div>
         </div>
+        <!--Start quiz-->
+        <div class="start">
+            <a @click="goTo('start')">Commencer le quiz</a>
+        </div>
         <!--login-->
         <div class="login">
             <img src="https://cdn-icons-png.flaticon.com/128/2609/2609282.png" width="50px" height="50px">
@@ -112,6 +117,9 @@ function defineClass(allGames) {
     </nav>
 </template>
 <style scoped>
+.start {
+    margin-left: 50px;
+}
 /* Style for the login button */
 .login>button {
     margin-left: 10px;
