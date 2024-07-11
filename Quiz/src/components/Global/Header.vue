@@ -182,7 +182,7 @@ nav {
     padding-bottom: 10px;
     border-bottom: solid 1px black;
     background-color: white;
-    position:sticky;
+    position:absolute;
     top: 0;
     width: 100%;
 }

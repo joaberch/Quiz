@@ -44,6 +44,7 @@
   import { ref } from 'vue';
   import allGames from '../../utils/allGames.js';
   
+  //All games are selected by default
   const selectedGames = ref([...allGames.value]);
   
   const toggleSelection = (game) => {

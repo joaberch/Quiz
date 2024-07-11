@@ -27,5 +27,6 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 0px;
+    margin-top: 75px;
 }
 </style>
