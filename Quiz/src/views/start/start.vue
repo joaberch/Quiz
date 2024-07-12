@@ -1,5 +1,8 @@
 <template>
     <div>
+      <div class="begin">
+        <button @click="startQuiz" :disabled="selectedGames.length === 0">Commencer le quiz</button>
+      </div>
       <h1>Sujets disponibles</h1>
       <table>
         <thead>
@@ -24,8 +27,8 @@
           </tr>
         </tbody>
       </table>
-      <h2>Sujets sélectionnés</h2>
-      <table>
+      <h2 v-if="selectedGames.length > 0">Sujets sélectionnés</h2>
+      <table v-if="selectedGames.length > 0">
         <thead>
           <tr>
             <th>Nom du jeu</th>
@@ -46,6 +49,10 @@
   
   //All games are selected by default
   const selectedGames = ref([...allGames.value]);
+
+  const startQuiz = () => {
+    console.log(selectedGames)
+  }
   
   const toggleSelection = (game) => {
     if (selectedGames.value.includes(game)) {
@@ -57,6 +64,44 @@
   </script>
   
   <style scoped>
+  .begin>button {
+    background-color: #4CAF50; /* Vert */
+    border: none; /* Pas de bordure */
+    color: white; /* Texte blanc */
+    padding: 15px 32px; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Affichage en ligne */
+    font-size: 16px; /* Taille de police */
+    margin: 4px 2px; /* Marges */
+    cursor: pointer; /* Curseur de la souris */
+    border-radius: 8px; /* Coins arrondis */
+    transition: background-color 0.3s, transform 0.3s; /* Transition douce pour le changement de couleur et l'animation */
+  }
+
+  .begin>button:hover:enabled {
+  background-color: #45a049; /* Vert légèrement plus foncé */
+  transform: scale(1.05); /* Légère augmentation de la taille */
+}
+
+.begin>button:active:enabled {
+  background-color: #3e8e41; /* Vert encore plus foncé */
+  transform: scale(0.95); /* Légère réduction de la taille */
+}
+
+.begin>button:disabled {
+  background-color: #ccc; /* Gris clair pour le bouton désactivé */
+  color: #666; /* Couleur du texte pour le bouton désactivé */
+  cursor: not-allowed; /* Curseur interdit */
+  box-shadow: none; /* Pas d'ombre */
+}
+
+  .begin {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
   ul {
     padding: 0;
   }
