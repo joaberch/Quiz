@@ -1,4 +1,5 @@
 <script setup>
+//TODO : predictive search from data and not games?
 import { useRouter } from 'vue-router';
 import allGames from '../../utils/allGames';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
@@ -95,7 +96,7 @@ function defineClass(allGames) {
         <a @click="goTo('Home')">Menu d'accueil</a>
         <!--Search bar-->
         <div class="search">
-            <input id="searchBar" type="text" placeholder="Recherche" autocomplete="off" v-model="selectedGame"
+            <input id="searchBar" disabled type="text" placeholder="Actuellement désactivé" autocomplete="off" v-model="selectedGame"
                 @keydown.enter="navigateTo" @input="suggestionChanged">
             <!--Predictive research-->
             <div :class="defineClass(allGames)">
