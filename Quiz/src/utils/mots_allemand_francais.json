@@ -1,0 +1,75 @@
+{
+  "categories": [
+    {
+      "name": "Der Mensch",
+      "subcategories": [
+        {
+          "name": "1.1 Personalien, Lebenslauf",
+          "words": [
+            {"de": "der Mensch, en", "fr": "l'homme, l'être humain"},
+            {"de": "die Leute", "fr": "les gens"},
+            {"de": "die Person, en", "fr": "la personne, le personnage"},
+            {"de": "persönlich", "fr": "personnel"},
+            {"de": "die Persönlichkeit, en", "fr": "la personnalité"},
+            {"de": "die Frau, en", "fr": "la femme, l'épouse"},
+            {"de": "Frau Müller", "fr": "Madame Müller"},
+            {"de": "das Fräulein, -", "fr": "la demoiselle, la mademoiselle"},
+            {"de": "das Mädchen, -", "fr": "la jeune/petite fille, la fillette"},
+            {"de": "weiblich", "fr": "féminin"},
+            {"de": "der Herr, en", "fr": "le monsieur, le seigneur, le maître"},
+            {"de": "der Mann, ¨er", "fr": "l'homme, le mari"},
+            {"de": "männlich", "fr": "masculin, viril"},
+            {"de": "das Alter, -", "fr": "l'âge la vieillesse"},
+            {"de": "im Alter von 18 Jahren", "fr": "À l'âge de 18 ans"},
+            {"de": "alt", "fr": "vieux, âgé"},
+            {"de": "Wie alt sind Sie?", "fr": "Quel âge avez-vous?"},
+            {"de": "Ich bin 17 (Jahre alt)", "fr": "J'ai 18 ans"},
+            {"de": "Im April werde ich 16 (Jahre alt)", "fr": "J'aurai 16 ans en avril"},
+            {"de": "erwachsen", "fr": "adulte"},
+            {"de": "ein Erwachsener", "fr": "un adulte"},
+            {"de": "das Kind, er", "fr": "l'enfant"},
+            {"de": "das Einzelkind, er", "fr": "l'enfant unique"},
+            {"de": "die Jugend, /", "fr": "la jeunesse"},
+            {"de": "jung", "fr": "jeune"},
+            {"de": "der Jugendliche", "fr": "le jeune, l'adolescent"},
+            {"de": "der Junge, n", "fr": "le garçon"},
+            {"de": "die Geburt, en", "fr": "la naissance"},
+            {"de": "der Geburstag, e", "fr": "l'anniversaire"},
+            {"de": "geboren", "fr": "né"},
+            {"de": "ich bin geboren", "fr": "Je suis né"},
+            {"de": "Er ist am 20. Oktober geboren", "fr": "Il est né le 20 octobre"},
+            {"de": "leben", "fr": "vivre"},
+            {"de": "das Leben, -", "fr": "la vie"},
+            {"de": "lebendig", "fr": "vivant"},
+            {"de": "werden, wird, wurde, ist geworden", "fr": "devenir"},
+            {"de": "Er wurde ein berühmter Arzt", "fr": "Il devint un médecin célèbre"},
+            {"de": "Warum ist er rot geworden?", "fr": "Pourquoi a-t-il rougi?"},
+            {"de": "sterben, stirbt, starb, ist gestorben (an + D)", "fr": "mourir (de)"},
+            {"de": "Er ist an einer schweren Krankheit gestorben", "fr": "Il est mort d'une grave maladie"},
+            {"de": "der Tod, /", "fr": "la mort"},
+            {"de": "tot", "fr": "mort"},
+            {"de": "der Tote", "fr": "le mort"},
+            {"de": "töten", "fr": "tuer"},
+            {"de": "heissen, heisst, hiess, hat geheissen", "fr": "s'appeler"},
+            {"de": "Wie heisst du mit Vornamen?", "fr": "Quel est ton prénom?"},
+            {"de": "der Name, n", "fr": "le nom"},
+            {"de": "der Vorname, n", "fr": "le prénom"},
+            {"de": "die Liste, n", "fr": "la liste"},
+            {"de": "nennen, nennt, nannte, hat genannt", "fr": "nommer, appeler"},
+            {"de": "jemand", "fr": "quelqu'un"},
+            {"de": "niemand", "fr": "personne"},
+            {"de": "Hat sie jemand(en) gesehen?", "fr": "A-t-elle vu quelqu'un?"},
+            {"de": "Niemand ander(e)s war da", "fr": "Personne d'autre n'était là"},
+            {"de": "selbst", "fr": "soi-même"},
+            {"de": "Du hast es selbst gesagt", "fr": "Tu l'as dit toi même"},
+            {"de": "Das müssen Sie selber wissen", "fr": "C'est à vous de le savoir"}
+          ]
+        },
+        {
+
+        }
+      ]
+    },
+    {}
+  ]
+}
