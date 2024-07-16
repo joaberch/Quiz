@@ -112,17 +112,23 @@ function defineClass(allGames) {
         </div>
         <!--login-->
         <div class="login">
-            <img src="https://cdn-icons-png.flaticon.com/128/2609/2609282.png" width="50px" height="50px">
+            <img id="imgLogin" src="https://cdn-icons-png.flaticon.com/128/2609/2609282.png" width="50px" height="50px">
             <button>Se connecter</button>
         </div>
     </nav>
 </template>
 <style scoped>
+#imgLogin {
+    margin-top: 5px;
+}
 .start {
     margin-left: 50px;
 }
 /* Style for the login button */
 .login>button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -179,6 +185,7 @@ button {
 /* Style for the whole header container */
 nav {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 10px;
     border-bottom: solid 1px black;
@@ -191,7 +198,7 @@ nav {
 input {
     padding: 5px 5px 5px 10px;
     border: 5px solid #40e0d0;
-    width: 300px;
+    margin-top: 5px;
     height: 25px;
     border-radius: 15px 15px 0px 0px;
     margin-left: 30px;
