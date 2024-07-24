@@ -1,0 +1,608 @@
+{
+    "categories": [
+        {
+            "name": "People",
+            "subcategories": [
+                {
+                    "name": "1.1 Personal Information, Biography",
+                    "words": [
+                        {
+                            "en": "human",
+                            "fr": "humain"
+                        },
+                        {
+                            "en": "people",
+                            "fr": "gens"
+                        },
+                        {
+                            "en": "person",
+                            "fr": "personne"
+                        },
+                        {
+                            "en": "personal",
+                            "fr": "personnel"
+                        },
+                        {
+                            "en": "personality",
+                            "fr": "personnalité"
+                        },
+                        {
+                            "en": "woman",
+                            "fr": "femme"
+                        },
+                        {
+                            "en": "Mrs.",
+                            "fr": "Madame"
+                        },
+                        {
+                            "en": "Miss",
+                            "fr": "Mademoiselle"
+                        },
+                        {
+                            "en": "girl",
+                            "fr": "fille"
+                        },
+                        {
+                            "en": "female",
+                            "fr": "féminin"
+                        },
+                        {
+                            "en": "man",
+                            "fr": "homme"
+                        },
+                        {
+                            "en": "male",
+                            "fr": "masculin"
+                        },
+                        {
+                            "en": "age",
+                            "fr": "âge"
+                        },
+                        {
+                            "en": "old",
+                            "fr": "vieux"
+                        },
+                        {
+                            "en": "young",
+                            "fr": "jeune"
+                        },
+                        {
+                            "en": "child",
+                            "fr": "enfant"
+                        },
+                        {
+                            "en": "birthday",
+                            "fr": "anniversaire"
+                        },
+                        {
+                            "en": "born",
+                            "fr": "né"
+                        },
+                        {
+                            "en": "to live",
+                            "fr": "vivre"
+                        },
+                        {
+                            "en": "life",
+                            "fr": "vie"
+                        },
+                        {
+                            "en": "alive",
+                            "fr": "vivant"
+                        },
+                        {
+                            "en": "to become",
+                            "fr": "devenir"
+                        },
+                        {
+                            "en": "to die",
+                            "fr": "mourir"
+                        },
+                        {
+                            "en": "death",
+                            "fr": "mort"
+                        },
+                        {
+                            "en": "dead",
+                            "fr": "mort"
+                        },
+                        {
+                            "en": "name",
+                            "fr": "nom"
+                        },
+                        {
+                            "en": "first name",
+                            "fr": "prénom"
+                        },
+                        {
+                            "en": "list",
+                            "fr": "liste"
+                        },
+                        {
+                            "en": "to call",
+                            "fr": "appeler"
+                        },
+                        {
+                            "en": "someone",
+                            "fr": "quelqu'un"
+                        },
+                        {
+                            "en": "nobody",
+                            "fr": "personne"
+                        },
+                        {
+                            "en": "self",
+                            "fr": "soi-même"
+                        }
+                    ]
+                },
+                {
+                    "name": "1.2 Family, Relatives",
+                    "words": [
+                        {
+                            "en": "family",
+                            "fr": "famille"
+                        },
+                        {
+                            "en": "parent",
+                            "fr": "parent"
+                        },
+                        {
+                            "en": "father",
+                            "fr": "père"
+                        },
+                        {
+                            "en": "mother",
+                            "fr": "mère"
+                        },
+                        {
+                            "en": "son",
+                            "fr": "fils"
+                        },
+                        {
+                            "en": "daughter",
+                            "fr": "fille"
+                        },
+                        {
+                            "en": "brother",
+                            "fr": "frère"
+                        },
+                        {
+                            "en": "sister",
+                            "fr": "sœur"
+                        },
+                        {
+                            "en": "grandfather",
+                            "fr": "grand-père"
+                        },
+                        {
+                            "en": "grandmother",
+                            "fr": "grand-mère"
+                        },
+                        {
+                            "en": "uncle",
+                            "fr": "oncle"
+                        },
+                        {
+                            "en": "aunt",
+                            "fr": "tante"
+                        },
+                        {
+                            "en": "cousin",
+                            "fr": "cousin"
+                        },
+                        {
+                            "en": "nephew",
+                            "fr": "neveu"
+                        },
+                        {
+                            "en": "niece",
+                            "fr": "nièce"
+                        },
+                        {
+                            "en": "husband",
+                            "fr": "mari"
+                        },
+                        {
+                            "en": "wife",
+                            "fr": "femme"
+                        },
+                        {
+                            "en": "relative",
+                            "fr": "parent"
+                        },
+                        {
+                            "en": "in-law",
+                            "fr": "beau-parent"
+                        },
+                        {
+                            "en": "stepfather",
+                            "fr": "beau-père"
+                        },
+                        {
+                            "en": "stepmother",
+                            "fr": "belle-mère"
+                        },
+                        {
+                            "en": "stepson",
+                            "fr": "beau-fils"
+                        },
+                        {
+                            "en": "stepdaughter",
+                            "fr": "belle-fille"
+                        },
+                        {
+                            "en": "stepbrother",
+                            "fr": "demi-frère"
+                        },
+                        {
+                            "en": "stepsister",
+                            "fr": "demi-sœur"
+                        },
+                        {
+                            "en": "sibling",
+                            "fr": "frère ou sœur"
+                        }
+                    ]
+                },
+                {
+                    "name": "1.3 Friends, Acquaintances",
+                    "words": [
+                        {
+                            "en": "friend",
+                            "fr": "ami"
+                        },
+                        {
+                            "en": "best friend",
+                            "fr": "meilleur ami"
+                        },
+                        {
+                            "en": "close friend",
+                            "fr": "ami proche"
+                        },
+                        {
+                            "en": "acquaintance",
+                            "fr": "connaissance"
+                        },
+                        {
+                            "en": "buddy",
+                            "fr": "copain"
+                        },
+                        {
+                            "en": "pal",
+                            "fr": "pote"
+                        },
+                        {
+                            "en": "companion",
+                            "fr": "compagnon"
+                        },
+                        {
+                            "en": "partner",
+                            "fr": "partenaire"
+                        },
+                        {
+                            "en": "neighbor",
+                            "fr": "voisin"
+                        },
+                        {
+                            "en": "roommate",
+                            "fr": "colocataire"
+                        },
+                        {
+                            "en": "classmate",
+                            "fr": "camarade de classe"
+                        },
+                        {
+                            "en": "colleague",
+                            "fr": "collègue"
+                        },
+                        {
+                            "en": "team",
+                            "fr": "équipe"
+                        },
+                        {
+                            "en": "group",
+                            "fr": "groupe"
+                        },
+                        {
+                            "en": "gang",
+                            "fr": "bande"
+                        },
+                        {
+                            "en": "community",
+                            "fr": "communauté"
+                        },
+                        {
+                            "en": "association",
+                            "fr": "association"
+                        },
+                        {
+                            "en": "society",
+                            "fr": "société"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Places",
+            "subcategories": [
+                {
+                    "name": "2.1 Geographical Names",
+                    "words": [
+                        {
+                            "en": "country",
+                            "fr": "pays"
+                        },
+                        {
+                            "en": "city",
+                            "fr": "ville"
+                        },
+                        {
+                            "en": "town",
+                            "fr": "bourg"
+                        },
+                        {
+                            "en": "village",
+                            "fr": "village"
+                        },
+                        {
+                            "en": "capital",
+                            "fr": "capitale"
+                        },
+                        {
+                            "en": "continent",
+                            "fr": "continent"
+                        },
+                        {
+                            "en": "island",
+                            "fr": "île"
+                        },
+                        {
+                            "en": "ocean",
+                            "fr": "océan"
+                        },
+                        {
+                            "en": "sea",
+                            "fr": "mer"
+                        },
+                        {
+                            "en": "river",
+                            "fr": "rivière"
+                        },
+                        {
+                            "en": "lake",
+                            "fr": "lac"
+                        },
+                        {
+                            "en": "mountain",
+                            "fr": "montagne"
+                        },
+                        {
+                            "en": "valley",
+                            "fr": "vallée"
+                        },
+                        {
+                            "en": "forest",
+                            "fr": "forêt"
+                        },
+                        {
+                            "en": "desert",
+                            "fr": "désert"
+                        },
+                        {
+                            "en": "region",
+                            "fr": "région"
+                        },
+                        {
+                            "en": "area",
+                            "fr": "zone"
+                        },
+                        {
+                            "en": "place",
+                            "fr": "lieu"
+                        },
+                        {
+                            "en": "location",
+                            "fr": "emplacement"
+                        }
+                    ]
+                },
+                {
+                    "name": "2.2 Buildings, Structures",
+                    "words": [
+                        {
+                            "en": "building",
+                            "fr": "bâtiment"
+                        },
+                        {
+                            "en": "house",
+                            "fr": "maison"
+                        },
+                        {
+                            "en": "apartment",
+                            "fr": "appartement"
+                        },
+                        {
+                            "en": "office",
+                            "fr": "bureau"
+                        },
+                        {
+                            "en": "school",
+                            "fr": "école"
+                        },
+                        {
+                            "en": "hospital",
+                            "fr": "hôpital"
+                        },
+                        {
+                            "en": "church",
+                            "fr": "église"
+                        },
+                        {
+                            "en": "shop",
+                            "fr": "magasin"
+                        },
+                        {
+                            "en": "store",
+                            "fr": "boutique"
+                        },
+                        {
+                            "en": "factory",
+                            "fr": "usine"
+                        },
+                        {
+                            "en": "warehouse",
+                            "fr": "entrepôt"
+                        },
+                        {
+                            "en": "barn",
+                            "fr": "grange"
+                        },
+                        {
+                            "en": "bridge",
+                            "fr": "pont"
+                        },
+                        {
+                            "en": "road",
+                            "fr": "route"
+                        },
+                        {
+                            "en": "street",
+                            "fr": "rue"
+                        },
+                        {
+                            "en": "highway",
+                            "fr": "autoroute"
+                        },
+                        {
+                            "en": "square",
+                            "fr": "place"
+                        },
+                        {
+                            "en": "park",
+                            "fr": "parc"
+                        },
+                        {
+                            "en": "garden",
+                            "fr": "jardin"
+                        },
+                        {
+                            "en": "monument",
+                            "fr": "monument"
+                        },
+                        {
+                            "en": "castle",
+                            "fr": "château"
+                        },
+                        {
+                            "en": "palace",
+                            "fr": "palais"
+                        },
+                        {
+                            "en": "tower",
+                            "fr": "tour"
+                        }
+                    ]
+                },
+                {
+                    "name": "2.3 Locations in a City",
+                    "words": [
+                        {
+                            "en": "downtown",
+                            "fr": "centre-ville"
+                        },
+                        {
+                            "en": "suburb",
+                            "fr": "banlieue"
+                        },
+                        {
+                            "en": "neighborhood",
+                            "fr": "quartier"
+                        },
+                        {
+                            "en": "market",
+                            "fr": "marché"
+                        },
+                        {
+                            "en": "shopping mall",
+                            "fr": "centre commercial"
+                        },
+                        {
+                            "en": "restaurant",
+                            "fr": "restaurant"
+                        },
+                        {
+                            "en": "café",
+                            "fr": "café"
+                        },
+                        {
+                            "en": "library",
+                            "fr": "bibliothèque"
+                        },
+                        {
+                            "en": "museum",
+                            "fr": "musée"
+                        },
+                        {
+                            "en": "theater",
+                            "fr": "théâtre"
+                        },
+                        {
+                            "en": "cinema",
+                            "fr": "cinéma"
+                        },
+                        {
+                            "en": "gym",
+                            "fr": "salle de sport"
+                        },
+                        {
+                            "en": "stadium",
+                            "fr": "stade"
+                        },
+                        {
+                            "en": "station",
+                            "fr": "gare"
+                        },
+                        {
+                            "en": "airport",
+                            "fr": "aéroport"
+                        },
+                        {
+                            "en": "port",
+                            "fr": "port"
+                        },
+                        {
+                            "en": "bus stop",
+                            "fr": "arrêt de bus"
+                        },
+                        {
+                            "en": "train station",
+                            "fr": "gare ferroviaire"
+                        },
+                        {
+                            "en": "police station",
+                            "fr": "commissariat"
+                        },
+                        {
+                            "en": "fire station",
+                            "fr": "caserne de pompiers"
+                        },
+                        {
+                            "en": "post office",
+                            "fr": "bureau de poste"
+                        },
+                        {
+                            "en": "bank",
+                            "fr": "banque"
+                        },
+                        {
+                            "en": "pharmacy",
+                            "fr": "pharmacie"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
